@@ -35,7 +35,7 @@ module.exports = {
 
 function calculateImports(options) {
   var imports = ['ace.js'];
-  ['mode', 'theme', 'ext', 'keybinding'].forEach(function(type) {
+  ['mode', 'theme', 'ext', 'snippet', 'keybinding'].forEach(function(type) {
     var wanted = options[type + 's'];
     if (!wanted) return;
     wanted.forEach(function(name) {
